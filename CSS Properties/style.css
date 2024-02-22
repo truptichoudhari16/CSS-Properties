@@ -1,0 +1,386 @@
+body {
+  margin: 0;
+  padding: 0;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* height: 80vh; */
+}
+
+.image-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 500px;
+}
+
+.image-container img {
+  width: 200px; /* Adjust the width as needed */
+  height: 250; /* Maintain aspect ratio */
+  margin-right: 20px; /* Adjust the spacing between images as needed */
+}
+
+/*  For rounded borders   */
+.img1 {
+  border-radius: 10px;
+}
+
+/* for Circular images */
+.img2 {
+  border-radius: 80%;
+}
+
+/* Thumbnail images */
+.img3 {
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 5px;
+}
+
+.img3:hover {
+  box-sizing: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+/* polaroid image / cards form */
+
+div.nature {
+  margin-top: 50px;
+  width: 30%;
+  background-color: rgba(220, 212, 212, 0.26);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 40px;
+}
+
+.para {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+/* polaroid image / cards form with text */
+
+h1 {
+  margin-left: 700px;
+  font-size: 900;
+  font-weight: bolder;
+}
+
+.image-cont {
+  display: flex;
+  margin-top: 60px;
+  margin-left: 100px;
+}
+
+.image-cont img {
+  margin-right: 20px;
+}
+
+/* Top left text  */
+.paaaaa {
+  position: relative;
+}
+
+.left {
+  position: absolute;
+  top: 8px;
+  left: 16px;
+  font-size: 35px;
+}
+
+/* Top right text  */
+.paa {
+  position: relative;
+}
+
+.ca {
+  position: absolute;
+  top: 8px;
+  right: 50px;
+  font-size: 35px;
+}
+
+/* Bottom left text  */
+.paaa {
+  position: relative;
+}
+
+.caa {
+  position: absolute;
+  bottom: 20px;
+  left: 16px;
+  font-size: 35px;
+}
+
+/* Bottom right text  */
+.paaaa {
+  position: relative;
+}
+
+.caaa {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+  font-size: 35px;
+}
+
+/* Image Filter  */
+
+.i {
+  filter: blur(3px);
+}
+
+.j {
+  filter: brightness(170%);
+}
+
+.k {
+  filter: contrast(310%);
+}
+
+.l {
+  filter: contrast(30%);
+}
+
+.image-contain {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+.image-contain img {
+  margin-right: 20px;
+}
+
+.m {
+  filter: grayscale(50px);
+}
+
+.n {
+  filter: hue-rotate(480deg);
+}
+
+.o {
+  filter: invert(120%);
+}
+
+.p {
+  filter: opacity(50%);
+}
+
+.q {
+  filter: saturate(20);
+}
+
+.r {
+  filter: sepia(150%);
+}
+
+.s {
+  filter: drop-shadow(8px 8px 10px rgba(239, 106, 5, 0.909));
+}
+
+.t {
+  margin-right: 500px;
+  filter: drop-shadow(-8px -8px 10px rgba(239, 106, 5, 0.909));
+}
+
+.u {
+  transform: scaleX(-1);
+}
+
+/* <!-- image overlay --> */
+
+.image-containes {
+  display: flex;
+  margin-top: 50px;
+  margin-left: 100px;
+}
+
+/* fade in box */
+.a {
+  position: relative;
+  width: 50%;
+  margin-left: 80px;
+}
+
+.b {
+  position: absolute;
+  top: 50%;
+  bottom: 0;
+  right: 0;
+  left: 50%;
+
+  opacity: 0;
+  transition: 0.5s ease;
+  transform: translate(-50%, -50%);
+}
+
+.a:hover .b {
+  opacity: 1;
+}
+.z {
+  opacity: 1;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+.a:hover .z {
+  opacity: 0.3;
+}
+
+.c {
+  color: white;
+  font-size: 30px;
+  padding: 20px 3px;
+  background-color: darkgoldenrod;
+}
+
+/* fade in text  */
+.d {
+  position: relative;
+  width: 100%;
+  margin-left: 80px;
+}
+
+.e {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  height: 100%;
+  width: 47%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: chocolate;
+}
+
+.d:hover .e {
+  opacity: 0.7;
+}
+
+.f {
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* creat slidden */
+.wa {
+  position: relative;
+  width: 50%;
+}
+
+.xa {
+  position: absolute;
+  bottom: 100%;
+  right: 0;
+  left: 0;
+  background-color: darkorange;
+
+  transition: 0.5s ease;
+  overflow: hidden;
+  width: 43%;
+  height: 0;
+}
+
+.wa:hover .xa {
+  bottom: 0;
+  height: 100%;
+}
+
+.ya {
+  white-space: nowrap;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* box shadow on cards  with images */
+
+div.box {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+div.card {
+  width: 250px;
+  text-align: center;
+  margin-top: 30px;
+
+  /* box shadow style start  */
+  box-shadow: 0 2px 4px 0 gray, 0 4px 16px 0 gray;
+}
+
+div.card img {
+  width: 100%;
+}
+
+div.text {
+  padding: 10px;
+  background-color: #fff;
+}
+
+/* box shadow on boxes  */
+
+.shadow {
+  margin-bottom: 40px;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+#boxes {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-left: 100px;
+  box-shadow: 0px 0px 4px violet, 0px 0px 8px violet, 0px 0px 12px violet;
+}
+
+#boxes1 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-left: 100px;
+  box-shadow: 0px 0px 4px violet, 0px 0px 8px red, 0px 0px 12px black;
+}
+
+#boxes2 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-left: 100px;
+  box-shadow: 4px 4px 2px violet, 8px 8px 4px red, 12px 12px 6px black;
+}
+
+#boxes3 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-left: 100px;
+  box-shadow: 4px 4px 2px blue, 8px 8px 4px red, 12px 12px 6px black;
+}
+
+#boxes4 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-left: 100px;
+  box-shadow: 0px 0px 2px blue, 0px 0px 4px red, 0px 0px 6px black;
+}
+
+#boxes5 {
+  width: 250px;
+  height: 250px;
+  border: 1px solid #ddd;
+  margin-left: 100px;
+  box-shadow: 0px 0px 2px grey, 0px 0px 4px grey, 0px 0px 6px grey;
+}
